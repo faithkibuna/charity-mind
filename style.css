@@ -8,30 +8,38 @@ nav {
   padding: 20px;
   box-sizing: border-box;
   font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
   display: flex;
   gap: 20px;
+  justify-content: flex-end;
+  width: 100%;
 }
 nav ul li a {
   color: black;
   font-weight: bold;
   font-size: xx-large;
+
+  display: flex;
 }
 form {
-  display: block;
-  gap: 5px;
-  width: 300px;
-  margin: 50px auto;
+  display: flex;
+  gap: 16px;
+  width: 400px;
+
   text-align: center;
   font-weight: bold;
-  padding: 70px;
+  padding: 40px;
   font-size: large;
-  border: 2px solid whitesmoke;
+  border: 8px solid lightgray;
   border-radius: 10px;
   font-size: x-large;
   border-color: lightgray;
+  display: block;
 }
 input {
   padding: 10px;
@@ -45,6 +53,8 @@ h1 {
   font-size: xx-large;
   font-weight: bold;
   margin-top: 20px;
+  font-weight: 900;
+  color: olivedrab;
 }
 thead {
   background-color: white;
@@ -59,4 +69,15 @@ h2 {
   font-weight: bold;
   color: green;
   font-weight: 900;
+}
+.card {
+  background: lightcyan;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  gap: 24px;
 }
