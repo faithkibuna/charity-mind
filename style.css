@@ -23,22 +23,21 @@ nav ul li a {
   color: black;
   font-weight: bold;
   font-size: xx-large;
-
   display: flex;
 }
 form {
   display: flex;
   gap: 16px;
   width: 400px;
-
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
   font-weight: bold;
   padding: 40px;
   font-size: large;
   border: 8px solid lightgray;
   border-radius: 10px;
   font-size: x-large;
-  border-color: lightgray;
   display: block;
 }
 input {
@@ -49,35 +48,55 @@ input {
   width: 100%;
 }
 h1 {
-  text-align: center;
+  text-align: start;
   font-size: xx-large;
   font-weight: bold;
-  margin-top: 20px;
   font-weight: 900;
   color: olivedrab;
 }
-thead {
-  background-color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: large;
-  padding: 20px;
-}
 h2 {
   text-align: center;
-  font-size: 45px;
+  font-size: xx-large;
   font-weight: bold;
-  color: green;
   font-weight: 900;
 }
-.card {
-  background: lightcyan;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #eee;
-  width: 200px;
-  padding: 20px;
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  background: #f1f0f0;
+  font-size: 1.1rem;
+  border-collapse: collapse;
+}
+thead {
+  background-color: #f5f5f5;
+  font-weight: bold;
   text-align: center;
-  margin: 20px;
+  padding: 16px;
+  font-size: 1.15rem;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.container {
   display: flex;
-  gap: 24px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  background-color: rgb(225, 225, 233);
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  border: #ddd;
 }
